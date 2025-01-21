@@ -1,0 +1,14 @@
+version: '3'
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    volumes:
+      - /opt/vaultwarden/data:/data
+      - /opt/vaultwarden/ssl:/ssl
+    environment:
+      ROCKET_TLS: '{certs="/ssl/vaultwarden.crt",key="/ssl/vaultwarden.key"}'
+      ROCKET_PORT: '443'
+    ports:
+      - '8070:443'
