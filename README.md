@@ -7,5 +7,5 @@ Pour utiliser ce service, vous devrez ouvrir deux ports spécifiques sur votre s
 # EN
 Documentation in **English**
 
-# Usage**
+# **Usage**
 To use this service, you will need to open two specific ports on your server. Make sure to check that these ports are not already in use by another service. The default ports are **3000** for Grafana and **8096** for InfluxDB, which will be used
