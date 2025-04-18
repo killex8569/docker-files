@@ -6,7 +6,7 @@ Voici les commandes à exécuter pour préparer l'environnement
 ```
 mkdir -p /opt/vaultwarden/ssl
 cd /opt/vaultwarden/ssl
-openssl genpkey -algorithm RSA -out vaultwarden.key -aes256
+openssl genrsa -out vaultwarden.key 2048
 openssl req -new -x509 -key vaultwarden.key -out vaultwarden.crt -days 3650
 ```
 
@@ -20,7 +20,7 @@ Here are the commands to execute in order to prepare the environment :
 ```
 mkdir -p /opt/vaultwarden/ssl
 cd /opt/vaultwarden/ssl
-openssl genpkey -algorithm RSA -out vaultwarden.key -aes256
+openssl genrsa -out vaultwarden.key 2048
 openssl req -new -x509 -key vaultwarden.key -out vaultwarden.crt -days 3650
 ```
 
